@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+  alignment="center" hgap="15" vgap="15" fx:controller="ui.EditUserController">
+
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER"
+      hgrow="ALWAYS" maxWidth="Infinity">
+    </ColumnConstraints>
+  </columnConstraints>
+
+  <Label GridPane.columnSpan="2" GridPane.halignment="LEFT"
+    GridPane.rowIndex="0"
+    GridPane.valignment="TOP"
+    text=""
+    fx:id="editUserLabel">
+    <font>
+      <Font size="20"></Font>
+    </font>
+  </Label>
+
+  <TextField GridPane.columnIndex="0" GridPane.columnSpan="1"
+    GridPane.halignment="CENTER"
+    GridPane.rowIndex="1" GridPane.rowSpan="1"
+    prefWidth="100" text=""
+    fx:id="nameField">
+  </TextField>
+
+  <Button GridPane.columnIndex="1"
+    GridPane.columnSpan="1" GridPane.halignment="CENTER"
+    GridPane.rowIndex="1" GridPane.rowSpan="1"
+    onAction="#handleUpdateNameButton" prefHeight="30"
+    prefWidth="200"
+    text="Update Name">
+  </Button>
+
+
+  <TextField GridPane.columnIndex="0" GridPane.columnSpan="1"
+    GridPane.halignment="CENTER"
+    GridPane.rowIndex="2" GridPane.rowSpan="1"
+    prefWidth="100" text=""
+    fx:id="passwordField">
+  </TextField>
+
+  <Button GridPane.columnIndex="1"
+    GridPane.columnSpan="1" GridPane.halignment="CENTER"
+    GridPane.rowIndex="2" GridPane.rowSpan="1"
+    onAction="#handleUpdatePasswordButton" prefHeight="30"
+    prefWidth="200"
+    text="Update Password">
+  </Button>
+
+</GridPane>

@@ -1,0 +1,35 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+  alignment="center" hgap="15" prefHeight="600.0" prefWidth="800.0"
+  vgap="15"
+  fx:controller="ui.TitleScreenController">
+
+  <padding>
+    <Insets bottom="10" left="10" right="10" top="10"/>
+  </padding>
+
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER"
+      hgrow="ALWAYS" maxWidth="Infinity">
+    </ColumnConstraints>
+  </columnConstraints>
+
+  <!-- Add Title Label -->
+
+  <fx:include
+    GridPane.valignment="TOP"
+    source="nav_bar.fxml" fx:id="child"/>
+
+  <Label style="-fx-wrap-text:true;-fx-text-alignment:center"
+    GridPane.halignment="CENTER"
+    GridPane.valignment="CENTER"
+    text="Wonderful Excellent Transit System Manager">
+    <font>
+      <Font size="50"></Font>
+    </font>
+  </Label>
+</GridPane>
